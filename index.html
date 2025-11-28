@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechShop - Tu tienda online de tecnología. Encuentra los mejores productos electrónicos con envío gratis y ofertas exclusivas.">
+    <title>TechShop - Tienda Online de Tecnología</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <span class="logo-icon">🛒</span>
+                TechShop
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Productos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#features" class="nav__link">Beneficios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials" class="nav__link">Testimonios</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <button class="nav__close" id="nav-close">
+                    ✕
+                </button>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="nav__cart" id="cart-btn">
+                    🛍️
+                    <span class="cart-count" id="cart-count">0</span>
+                </button>
+                <button class="nav__toggle" id="nav-toggle">
+                    ☰
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__subtitle">🔥 Ofertas de Temporada</span>
+                    <h1 class="hero__title">
+                        Descubre la Mejor <span class="highlight">Tecnología</span> al Mejor Precio
+                    </h1>
+                    <p class="hero__description">
+                        Encuentra smartphones, laptops, accesorios y mucho más. Envío gratis en compras mayores a $50. ¡Aprovecha nuestras ofertas exclusivas!
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#products" class="btn btn--primary">
+                            Ver Productos
+                        </a>
+                        <a href="#features" class="btn btn--outline">
+                            Conocer Más
+                        </a>
+                    </div>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__number">10K+</span>
+                            <span class="stat__text">Clientes Felices</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">500+</span>
+                            <span class="stat__text">Productos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">24/7</span>
+                            <span class="stat__text">Soporte</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <div class="hero__image-wrapper">
+                        <div class="hero__product-card">
+                            <span class="discount-badge">-30%</span>
+                            <div class="product-emoji">📱</div>
+                            <h3>Smartphone Pro</h3>
+                            <p class="price"><del>$999</del> <strong>$699</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section class="brands section">
+            <div class="container">
+                <p class="brands__title">Marcas que confían en nosotros</p>
+                <div class="brands__list">
+                    <div class="brand">Apple</div>
+                    <div class="brand">Samsung</div>
+                    <div class="brand">Sony</div>
+                    <div class="brand">LG</div>
+                    <div class="brand">Xiaomi</div>
+                    <div class="brand">HP</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products section" id="products">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Nuestros Productos</span>
+                    <h2 class="section__title">Productos Destacados</h2>
+                    <p class="section__description">Descubre nuestra selección de los mejores productos tecnológicos</p>
+                </div>
+
+                <div class="products__filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="phones">Smartphones</button>
+                    <button class="filter-btn" data-filter="laptops">Laptops</button>
+                    <button class="filter-btn" data-filter="accessories">Accesorios</button>
+                </div>
+
+                <div class="products__grid" id="products-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card" data-category="phones">
+                        <div class="product-card__image">
+                            <span class="product-card__badge">Nuevo</span>
+                            <div class="product-emoji-large">📱</div>
+                            <div class="product-card__actions">
+                                <button class="action-btn wishlist-btn" title="Agregar a favoritos">❤️</button>
+                                <button class="action-btn quick-view-btn" title="Vista rápida">👁️</button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Smartphones</span>
+                            <h3 class="product-card__title">iPhone 15 Pro Max</h3>
+                            <div class="product-card__rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(128)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="current-price">$1,199</span>
+                                <span class="original-price">$1,299</span>
+                            </div>
+                            <button class="btn btn--primary btn--full add-to-cart" data-id="1" data-name="iPhone 15 Pro Max" data-price="1199">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card" data-category="laptops">
+                        <div class="product-card__image">
+                            <span class="product-card__badge hot">Hot</span>
+                            <div class="product-emoji-large">💻</div>
+                            <div class="product-card__actions">
+                                <button class="action-btn wishlist-btn" title="Agregar a favoritos">❤️</button>
+                                <button class="action-btn quick-view-btn" title="Vista rápida">👁️</button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Laptops</span>
+                            <h3 class="product-card__title">MacBook Pro M3</h3>
+                            <div class="product-card__rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(95)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="current-price">$1,999</span>
+                                <span class="original-price">$2,199</span>
+                            </div>
+                            <button class="btn btn--primary btn--full add-to-cart" data-id="2" data-name="MacBook Pro M3" data-price="1999">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card" data-category="accessories">
+                        <div class="product-card__image">
+                            <span class="product-card__badge sale">-20%</span>
+                            <div class="product-emoji-large">🎧</div>
+                            <div class="product-card__actions">
+                                <button class="action-btn wishlist-btn" title="Agregar a favoritos">❤️</button>
+                                <button class="action-btn quick-view-btn" title="Vista rápida">👁️</button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Accesorios</span>
+                            <h3 class="product-card__title">AirPods Pro 2</h3>
+                            <div class="product-card__rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(256)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="current-price">$199</span>
+                                <span class="original-price">$249</span>
+                            </div>
+                            <button class="btn btn--primary btn--full add-to-cart" data-id="3" data-name="AirPods Pro 2" data-price="199">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card" data-category="phones">
+                        <div class="product-card__image">
+                            <div class="product-emoji-large">📱</div>
+                            <div class="product-card__actions">
+                                <button class="action-btn wishlist-btn" title="Agregar a favoritos">❤️</button>
+                                <button class="action-btn quick-view-btn" title="Vista rápida">👁️</button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Smartphones</span>
+                            <h3 class="product-card__title">Samsung Galaxy S24</h3>
+                            <div class="product-card__rating">
+                                <span class="stars">⭐⭐⭐⭐</span>
+                                <span class="rating-count">(89)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="current-price">$899</span>
+                                <span class="original-price">$999</span>
+                            </div>
+                            <button class="btn btn--primary btn--full add-to-cart" data-id="4" data-name="Samsung Galaxy S24" data-price="899">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 5 -->
+                    <article class="product-card" data-category="laptops">
+                        <div class="product-card__image">
+                            <div class="product-emoji-large">💻</div>
+                            <div class="product-card__actions">
+                                <button class="action-btn wishlist-btn" title="Agregar a favoritos">❤️</button>
+                                <button class="action-btn quick-view-btn" title="Vista rápida">👁️</button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Laptops</span>
+                            <h3 class="product-card__title">Dell XPS 15</h3>
+                            <div class="product-card__rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(67)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="current-price">$1,499</span>
+                                <span class="original-price">$1,699</span>
+                            </div>
+                            <button class="btn btn--primary btn--full add-to-cart" data-id="5" data-name="Dell XPS 15" data-price="1499">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </article>
+
+                    <!-- Product 6 -->
+                    <article class="product-card" data-category="accessories">
+                        <div class="product-card__image">
+                            <span class="product-card__badge">Nuevo</span>
+                            <div class="product-emoji-large">⌚</div>
+                            <div class="product-card__actions">
+                                <button class="action-btn wishlist-btn" title="Agregar a favoritos">❤️</button>
+                                <button class="action-btn quick-view-btn" title="Vista rápida">👁️</button>
+                            </div>
+                        </div>
+                        <div class="product-card__content">
+                            <span class="product-card__category">Accesorios</span>
+                            <h3 class="product-card__title">Apple Watch Series 9</h3>
+                            <div class="product-card__rating">
+                                <span class="stars">⭐⭐⭐⭐⭐</span>
+                                <span class="rating-count">(203)</span>
+                            </div>
+                            <div class="product-card__price">
+                                <span class="current-price">$399</span>
+                                <span class="original-price">$449</span>
+                            </div>
+                            <button class="btn btn--primary btn--full add-to-cart" data-id="6" data-name="Apple Watch Series 9" data-price="399">
+                                Agregar al Carrito
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="products__cta">
+                    <a href="#" class="btn btn--outline btn--large">Ver Todos los Productos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features section" id="features">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">¿Por qué elegirnos?</span>
+                    <h2 class="section__title">Beneficios de Comprar con Nosotros</h2>
+                </div>
+
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🚚</div>
+                        <h3 class="feature-card__title">Envío Gratis</h3>
+                        <p class="feature-card__description">En todas las compras mayores a $50. Entrega en 24-48 horas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">🔒</div>
+                        <h3 class="feature-card__title">Pago Seguro</h3>
+                        <p class="feature-card__description">Transacciones 100% seguras con encriptación de datos.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">↩️</div>
+                        <h3 class="feature-card__title">Devolución Fácil</h3>
+                        <p class="feature-card__description">30 días para devolver tu producto sin preguntas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">💬</div>
+                        <h3 class="feature-card__title">Soporte 24/7</h3>
+                        <p class="feature-card__description">Atención al cliente disponible las 24 horas del día.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offer Banner -->
+        <section class="offer section">
+            <div class="container">
+                <div class="offer__content">
+                    <div class="offer__text">
+                        <span class="offer__badge">Oferta Especial</span>
+                        <h2 class="offer__title">¡Hasta 50% de Descuento!</h2>
+                        <p class="offer__description">Aprovecha nuestras ofertas de fin de temporada en productos seleccionados. ¡Solo por tiempo limitado!</p>
+                        <div class="offer__countdown" id="countdown">
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="days">00</span>
+                                <span class="countdown-label">Días</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="hours">00</span>
+                                <span class="countdown-label">Horas</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="minutes">00</span>
+                                <span class="countdown-label">Min</span>
+                            </div>
+                            <div class="countdown-item">
+                                <span class="countdown-number" id="seconds">00</span>
+                                <span class="countdown-label">Seg</span>
+                            </div>
+                        </div>
+                        <a href="#products" class="btn btn--primary btn--large">Ver Ofertas</a>
+                    </div>
+                    <div class="offer__image">
+                        <div class="offer-product">🎁</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section" id="testimonials">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Testimonios</span>
+                    <h2 class="section__title">Lo Que Dicen Nuestros Clientes</h2>
+                </div>
+
+                <div class="testimonials__slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">"Excelente servicio y productos de alta calidad. Mi laptop llegó en perfectas condiciones y antes de lo esperado. ¡Muy recomendado!"</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-avatar">👨</div>
+                            <div class="author-info">
+                                <h4>Carlos Rodríguez</h4>
+                                <span>Cliente Verificado</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">"El mejor lugar para comprar tecnología. Los precios son competitivos y el soporte al cliente es excepcional. Ya he realizado varias compras."</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <span>Cliente Frecuente</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-card__rating">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-card__text">"Increíble experiencia de compra. La página es fácil de usar y encontré exactamente lo que buscaba a un precio inmejorable."</p>
+                        <div class="testimonial-card__author">
+                            <div class="author-avatar">👨</div>
+                            <div class="author-info">
+                                <h4>Juan Martínez</h4>
+                                <span>Cliente Nuevo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter section">
+            <div class="container">
+                <div class="newsletter__content">
+                    <div class="newsletter__text">
+                        <h2 class="newsletter__title">Suscríbete a Nuestro Newsletter</h2>
+                        <p class="newsletter__description">Recibe ofertas exclusivas, novedades y descuentos especiales directamente en tu correo.</p>
+                    </div>
+                    <form class="newsletter__form" id="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-input" placeholder="Tu correo electrónico" required>
+                            <button type="submit" class="btn btn--primary">Suscribirse</button>
+                        </div>
+                        <p class="form-note">Al suscribirte, aceptas recibir correos promocionales. Puedes cancelar en cualquier momento.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__subtitle">Contacto</span>
+                    <h2 class="section__title">¿Tienes Alguna Pregunta?</h2>
+                    <p class="section__description">Estamos aquí para ayudarte. Contáctanos por cualquiera de estos medios.</p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📍</div>
+                            <div class="contact-item__content">
+                                <h4>Dirección</h4>
+                                <p>Av. Principal 123, Ciudad Tech</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item__icon">📞</div>
+                            <div class="contact-item__content">
+                                <h4>Teléfono</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item__icon">✉️</div>
+                            <div class="contact-item__content">
+                                <h4>Email</h4>
+                                <p>info@techshop.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-item__icon">🕐</div>
+                            <div class="contact-item__content">
+                                <h4>Horario</h4>
+                                <p>Lun - Vie: 9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre</label>
+                                <input type="text" id="name" class="form-input" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" class="form-input" placeholder="Tu email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Asunto del mensaje" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" class="form-input form-textarea" placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--large">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="logo-icon">🛒</span>
+                        TechShop
+                    </a>
+                    <p class="footer__description">Tu tienda online de confianza para los mejores productos tecnológicos. Calidad, precio y servicio garantizado.</p>
+                    <div class="footer__social">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#features">Beneficios</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#">Smartphones</a></li>
+                        <li><a href="#">Laptops</a></li>
+                        <li><a href="#">Tablets</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                        <li><a href="#">Gaming</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Envíos</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 TechShop. Todos los derechos reservados.</p>
+                <div class="footer__payments">
+                    <span>Métodos de pago:</span>
+                    <span class="payment-icons">💳 💵 🏦</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-modal__overlay" id="cart-overlay"></div>
+        <div class="cart-modal__content">
+            <div class="cart-modal__header">
+                <h3>Tu Carrito</h3>
+                <button class="cart-modal__close" id="cart-close">✕</button>
+            </div>
+            <div class="cart-modal__body" id="cart-items">
+                <p class="cart-empty">Tu carrito está vacío</p>
+            </div>
+            <div class="cart-modal__footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+                <button class="btn btn--primary btn--full">Proceder al Pago</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Volver arriba">
+        ⬆️
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
